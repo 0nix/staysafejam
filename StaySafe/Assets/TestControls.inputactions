@@ -1,0 +1,33 @@
+{
+    "name": "TestControls",
+    "maps": [
+        {
+            "name": "Main",
+            "id": "8ae72501-b63e-489b-b909-bcc32a4f24ee",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "a054f084-aa15-4007-a100-81d393446efd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Tap,SlowTap"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6da8cea5-7b28-455c-878f-fe74544931ab",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
