@@ -38,12 +38,13 @@ namespace Pathfinding {
 	[AddComponentMenu("Pathfinding/AI/AILerp (2D,3D)")]
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_a_i_lerp.php")]
 	public class AILerp : VersionedMonoBehaviour, IAstarAI {
-		/// <summary>
-		/// Determines how often it will search for new paths.
-		/// If you have fast moving targets or AIs, you might want to set it to a lower value.
-		/// The value is in seconds between path requests.
-		/// </summary>
-		public float repathRate = 0.5F;
+
+        /// <summary>
+        /// Determines how often it will search for new paths.
+        /// If you have fast moving targets or AIs, you might want to set it to a lower value.
+        /// The value is in seconds between path requests.
+        /// </summary>
+        public float repathRate = 0.5F;
 
 		/// <summary>\copydoc Pathfinding::IAstarAI::canSearch</summary>
 		public bool canSearch = true;
@@ -98,7 +99,7 @@ namespace Pathfinding {
 		public float switchPathInterpolationSpeed = 5;
 
 		/// <summary>True if the end of the current path has been reached</summary>
-		public bool reachedEndOfPath { get; private set; }
+		public bool reachedEndOfPath { get; set; }
 
 		/// <summary>\copydoc Pathfinding::IAstarAI::reachedDestination</summary>
 		public bool reachedDestination {
@@ -286,8 +287,8 @@ namespace Pathfinding {
 		/// </summary>
 		bool startHasRun = false;
 
-		Vector3 previousPosition1, previousPosition2, simulatedPosition;
-		Quaternion simulatedRotation;
+		public Vector3 previousPosition1, previousPosition2, simulatedPosition;
+		public Quaternion simulatedRotation;
 
 		/// <summary>Required for serialization backward compatibility</summary>
 		[UnityEngine.Serialization.FormerlySerializedAs("target")][SerializeField][HideInInspector]
@@ -581,7 +582,7 @@ namespace Pathfinding {
 			if (updateRotation) tr.rotation = nextRotation;
 		}
 
-		Quaternion SimulateRotationTowards (Vector3 direction, float deltaTime) {
+		public Quaternion SimulateRotationTowards (Vector3 direction, float deltaTime) {
 			// Rotate unless we are really close to the target
 			if (direction != Vector3.zero) {
 				Quaternion targetRotation = Quaternion.LookRotation(direction, orientation == OrientationMode.YAxisForward ? Vector3.back : Vector3.up);
