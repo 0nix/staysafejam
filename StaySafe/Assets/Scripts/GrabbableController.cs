@@ -6,6 +6,8 @@ public class GrabbableController : MonoBehaviour
 {
     private List<GameObject> currentCollisions = new List<GameObject>();
     public bool isGrabbed = false;
+    public EventScriptInterface SuccessEventScript = null;
+    public EventScriptInterface FailureEventScript = null;
     public int chesterRequirement = 0;
     private ChesterAILerp ChesterLerp;
     // Start is called before the first frame update
@@ -38,10 +40,17 @@ public class GrabbableController : MonoBehaviour
                 isGrabbed = true;
                 ChesterLerp.EnableNavigation();
                 OnGrab();
+                if(SuccessEventScript != null)
+                {
+                    SuccessEventScript.SomethingHappensHere();
+                }
             }
             else
             {
-                Debug.Log("Do something here");
+                if (FailureEventScript != null)
+                {
+                    FailureEventScript.SomethingHappensHere();
+                }
             }
         } else
         {

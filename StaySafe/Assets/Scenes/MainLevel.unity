@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -207,6 +212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -283,6 +293,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,6 +373,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -421,6 +441,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 42232704}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &42232706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8508178789515486176, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 42232704}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229267cdc04aa64459e02e357637c79f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &50270463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -507,6 +544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -745,6 +787,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -819,6 +866,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -895,6 +947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -970,6 +1027,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1044,6 +1106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -1201,6 +1268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1276,6 +1348,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1350,6 +1427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -2075,6 +2157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2150,6 +2237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2224,6 +2316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -2381,6 +2478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2455,6 +2557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -2531,6 +2638,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2605,6 +2717,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -2761,6 +2878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -3145,6 +3267,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3219,6 +3346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -3352,6 +3484,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3426,6 +3563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -3502,6 +3644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3576,6 +3723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -3652,6 +3804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3726,6 +3883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -4532,6 +4694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4607,6 +4774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4681,6 +4853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -4901,6 +5078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4975,6 +5157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -5051,6 +5238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5125,6 +5317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -5249,6 +5446,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5323,6 +5525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -5399,6 +5606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5474,6 +5686,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5548,6 +5765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -5697,6 +5919,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5771,6 +5998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -5847,6 +6079,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5921,6 +6158,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -5997,6 +6239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6072,6 +6319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6146,6 +6398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -6303,6 +6560,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6378,6 +6640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6452,6 +6719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -6665,6 +6937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -6902,6 +7179,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -7244,7 +7526,7 @@ Transform:
   m_LocalScale: {x: 0.49753708, y: 0.49753708, z: 0.49753705}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -65.156006}
 --- !u!212 &1016532526
 SpriteRenderer:
@@ -7284,7 +7566,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 4ca0ee601ceddac4ab33ba147b8d4b7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7307,6 +7589,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -7382,6 +7669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -7515,6 +7807,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7589,6 +7886,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -7665,6 +7967,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7739,6 +8046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -7872,6 +8184,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7946,6 +8263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -8142,6 +8464,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8216,6 +8543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -8555,6 +8887,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8728,7 +9065,7 @@ Transform:
   m_LocalScale: {x: 13.47835, y: 13.478348, z: 13.47835}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 1.151, z: 54.56}
 --- !u!212 &1276496456
 SpriteRenderer:
@@ -8768,7 +9105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 8c625f6c412085b4d9682e6da0745cd3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8791,6 +9128,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -8866,6 +9208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -9023,6 +9370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9098,6 +9450,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9171,12 +9528,12 @@ PrefabInstance:
     - target: {fileID: 9203864587087588192, guid: e3926e6c1fbda424e8eeb615f78ae1d3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.79
+      value: -33.14
       objectReference: {fileID: 0}
     - target: {fileID: 9203864587087588192, guid: e3926e6c1fbda424e8eeb615f78ae1d3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.18
+      value: 52.01
       objectReference: {fileID: 0}
     - target: {fileID: 9203864587087588192, guid: e3926e6c1fbda424e8eeb615f78ae1d3,
         type: 3}
@@ -9230,6 +9587,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3926e6c1fbda424e8eeb615f78ae1d3, type: 3}
+--- !u!4 &1310907707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9203864587087588192, guid: e3926e6c1fbda424e8eeb615f78ae1d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310907706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1310907708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9203864587087588207, guid: e3926e6c1fbda424e8eeb615f78ae1d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310907706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1325060799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9241,6 +9610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -9317,6 +9691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9391,6 +9770,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -10116,6 +10500,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10272,6 +10661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10346,6 +10740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -10478,6 +10877,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -10745,7 +11149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACAn+uqulBzdAIAACAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziUjGwfi3lqHkB7yMaWdXHwR8hprsCWPPgIkw3/vSjbYoVzQvN232vd25U8ipGmBW6VXWhRPqgDyfUL8mXybDMFHOLCtkmvxAeecN1HYyiexkPObWaEQjzzNqAasFvyH3NY+mSLopCiVbpbFFjJlrEG4ZLUBDGllPVsi9DkhB/xLPeOIh3jhTx8BmpzwyEFa0EPmlN7MI4q/ZBb3nOgmmdHbKEoWyymd9/SO7SSvWdNC4ZUMRWJ6uY92iRJV9jleEVd1LUzfIrHHNliQsdY4FIgJhWAoOTTm8ysQ28r6emPyS1kasL0fmh3vhUbnuqrkp+rsbJjZdZ29s9rBpfWu5NN/0WkUwqVWzeP51ijosZXgu9/syJmxI7fH8P3Xtp3cs3rHNjW8VSCf1UorJwsMWu081RmI70elLsqyCvhuyOt6vQJdOxh+thunR2M6o2mS3MX9pBBL03SRzhbzu8npFCw5ZLVoNp54k3TAulZhCGFTQOO4fqGOsEamvwBR39tfA3/YdrxvfeBBaGMx1IuXvumNctqnkmWw0mt0NlNaQoB7KS1IVtvjK5ax13O9io2uvYo8MP+y+sv72PnBXFECPORTehV6VfvLDE2l9k9gqhdnayFhaNoHntGnTEnZrd3YkzNt7XTJ+Ii2daL4unGEs3gBfFNwyst0HsVTzos42cTxIrmbc3q7IWElhUSdrH7tGu3twanJobjE9Tt/cCYrzdrwBArN9ivx0aiR5UKWas01gHzpKlwaB42X4FMtloVAg9ZgrZBh3uQzJ7XiOyjyS6E8KF0erGb5UCUnrXhX1iM5ycInJicncvoHUEsDBBQAAAgIAACAn+tY6L2fbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM00lFQSi9KLMgoBooYgjilmSkgdrRScqKReWpyUkqyQXKapZmhkW5ycoqRSZKRkbmJhVmygWmSUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACAn+uqulBzdAIAACAFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACAn+tY6L2fbQAAAHgAAAAJACQAAAAAAAAAAAAAAMECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAeQMAAAAA
+    dataString: UEsDBBQAAAgIAACAn+s6S+MKYAIAAAcFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjOwSa3lpCSA9JmNBOLr4IaY01yJJHHwHC8N+7km3sUC7I7+3H26e1T0QoWwNz2iyN4M+aA/kxIuFMvo168gkOdKvVWnxCF/MuuCtDEI0xb9QJjXga0qyuwBnBfqqtDMEJgl6JQptqwbcw19ZZhAsqLSBltAvZCqHTiBzw7z5kHPGQzcLpM0KjMx4ZKAemjxwnN9M0wd/kNmtz0pvJbXKXppPZYpxM2/Qm2ysmaVUDD5P0RbLk0i9pAhVO2caEiZiWUthWInHHOlrwRo/BAC4ojhtFhdgSxLZ0odYw8bUoLLjWC0OPD8Kga01F8ks3VlbU7hpVH1T60CO7m0Y9TdHn//hxGunC6Oqp65vGaVwp2A4VMmrdwOsh/PBVuFd7Knd0I+G9BPWil0Z7xZF0xodUbyF76B8vo81LYLseb6Regb7u3e687m42zHCO0x/mUlSbQN1MGmAtdfQ6LgQYvJXfKDhui21LIBpU/LXwh26Ha9USj8JYh1Q7pQryNtqbEEoW0bMwjXdzbRREuBVdg6LSHVdYxl1f4RU3aHvFPNLwArXNW657L65SItzHJ8kVtdL7y2XZUu+fwZav3kmhoBcdiBf0aa6VajZs6EmXtvamoGyQtvWCf10twmg2A7bhLGHF/TTNxozxbLLJstnk+5QldxsSd08onJPKVSO0tQdvTfXFFe5Z910ZLQ2t47ZzQ/dL8VnpgeVCFXrNDIB6bSpchIPBJvhG8gUXaNAanBMq3jc55URqtgOeXwrlcdLFwRma91VyUosP7QKSk3n8kuTkTM7/AFBLAwQUAAAICAAAgJ/rWOi9n20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNJRUEovSizIKAaKGII4pZkpIHa0UnKikXlqclJKskFymqWZoZFucnKKkUmSkZG5iYVZsoFpklIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAgJ/rOkvjCmACAAAHBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAgJ/rWOi9n20AAAB4AAAACQAkAAAAAAAAAAAAAACtAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGUDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -10758,7 +11162,7 @@ MonoBehaviour:
   manualDebugFloorRoof: 0
   showSearchTree: 0
   unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
+  logPathResults: 4
   maxNearestNodeDistance: 100
   scanOnStartup: 1
   fullGetNearestSearch: 0
@@ -10898,7 +11302,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: cc59b90b5d37f854db99ac35504454eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10922,7 +11326,7 @@ Transform:
   m_LocalScale: {x: 7.9878244, y: 7.9878244, z: 7.987826}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -75.15401}
 --- !u!1001 &1459218346
 PrefabInstance:
@@ -10935,6 +11339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -11205,9 +11614,9 @@ PolygonCollider2D:
       - {x: -3.1382136, y: 17.828848}
       - {x: -5.6564584, y: 19.450113}
       - {x: -10.157831, y: 22.413855}
-      - {x: -12.298498, y: 27.110983}
-      - {x: -13.863203, y: 27.521917}
-      - {x: -15.256456, y: 27.33764}
+      - {x: -12.334486, y: 26.64318}
+      - {x: -12.76866, y: 27.560059}
+      - {x: -14.372482, y: 27.768051}
       - {x: -19.714106, y: 27.833147}
       - {x: -24.540108, y: 28.260649}
       - {x: -32.23083, y: 28.29989}
@@ -11219,12 +11628,12 @@ PolygonCollider2D:
       - {x: -24.679352, y: 42.336685}
       - {x: -21.614368, y: 38.029907}
       - {x: -19.841684, y: 35.790993}
-      - {x: -14.22143, y: 33.27632}
-      - {x: -14.595461, y: 33.30509}
-      - {x: -13.600517, y: 32.753914}
-      - {x: -13.630663, y: 30.9438}
-      - {x: -12.616753, y: 31.000254}
-      - {x: -12.391071, y: 34.38173}
+      - {x: -15.588854, y: 33.960033}
+      - {x: -14.883339, y: 35.104336}
+      - {x: -13.780439, y: 34.80505}
+      - {x: -12.982933, y: 35.190014}
+      - {x: -12.112967, y: 34.778667}
+      - {x: -11.563419, y: 35.029457}
       - {x: -12.044636, y: 43.567}
       - {x: 3.6262965, y: 64.063805}
       - {x: 10.852032, y: 71.371895}
@@ -11295,6 +11704,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11358,6 +11772,152 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1478123296}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1491479732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491479733}
+  - component: {fileID: 1491479734}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491479733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491479732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.149435, y: 55.7359, z: -570.2842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1491479734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491479732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f8d5d074f3c3b4da39495bd43557e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chester:
+  - {fileID: 42232706}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  GrabbingTags:
+  - bridge
+  projected: {fileID: 1310907708}
 --- !u!1001 &1502584608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11369,6 +11929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -11445,6 +12010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11519,6 +12089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -11695,6 +12270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -11925,6 +12505,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11999,6 +12584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -12075,6 +12665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12150,6 +12745,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12224,6 +12824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -12695,7 +13300,7 @@ Transform:
   m_LocalScale: {x: 1.9891266, y: 1.9891266, z: 1.9891264}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.176001}
 --- !u!212 &1675605608
 SpriteRenderer:
@@ -12735,7 +13340,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 9387ddc2c790778408bdc52c3b13e763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12917,6 +13522,7 @@ GameObject:
   - component: {fileID: 1749600844}
   - component: {fileID: 1749600843}
   - component: {fileID: 1749600846}
+  - component: {fileID: 1749600847}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12959,7 +13565,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 22.4
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12983,7 +13589,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749600842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.4, y: 52.7, z: -29.1}
+  m_LocalPosition: {x: -35.6, y: 56, z: -29.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13020,6 +13626,28 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1749600847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749600842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1158300c85e4de341962e56992456043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1310907707}
+  smoothTime: 0.9
+  sizechangeTime: 0.3
+  posy: 0
+  minX: -82.46
+  maxX: 80.6
+  minY: -89.7
+  maxY: 89.6
+  isTargetUpdate: 1
+  isCameraSizeUpdate: 0
 --- !u!1001 &1765066207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13031,6 +13659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -13107,6 +13740,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13181,6 +13819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -13419,6 +14062,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13530,6 +14178,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13635,6 +14288,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13709,6 +14367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -13842,6 +14505,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13915,6 +14583,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1925402759}
   - component: {fileID: 1925402760}
+  - component: {fileID: 1925402761}
+  - component: {fileID: 1925402762}
   m_Layer: 8
   m_Name: Bridge1 Blocker
   m_TagString: noBlockBridge
@@ -13949,7 +14619,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.595499, y: 0}
+  m_Offset: {x: 2.2288516, y: 0.3081187}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13960,8 +14630,38 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.190998, y: 1}
+  m_Size: {x: 5.8685374, y: 8.1209545}
   m_EdgeRadius: 0
+--- !u!58 &1925402761
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925402758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.41, y: 0.28}
+  serializedVersion: 2
+  m_Radius: 3.26
+--- !u!114 &1925402762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925402758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01009255ea775e45bde166d547080f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bridgeTag: bridge
+  bridgePlaced: {fileID: 882451965}
 --- !u!1001 &1936882848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13973,6 +14673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -14049,6 +14754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14124,6 +14834,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14198,7 +14913,7 @@ GameObject:
   - component: {fileID: 1979224416}
   - component: {fileID: 1979224417}
   m_Layer: 0
-  m_Name: bandaid3 (1)
+  m_Name: SecondBandaid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14216,7 +14931,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 48.227}
 --- !u!212 &1979224417
 SpriteRenderer:
@@ -14256,7 +14971,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 03a4b2c3da7bf3947a6005e37a306c9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14346,6 +15061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -14497,6 +15217,7 @@ Transform:
   m_LocalPosition: {x: 21.304504, y: 79.94221, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2104266377}
   - {fileID: 1979224416}
   - {fileID: 1016532525}
   - {fileID: 2110331733}
@@ -14504,7 +15225,6 @@ Transform:
   - {fileID: 1456465626}
   - {fileID: 1675605607}
   - {fileID: 1276496455}
-  - {fileID: 2104266377}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15169,6 +15889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15243,6 +15968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -15463,6 +16193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chester (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15537,6 +16272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -15642,6 +16382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -15761,7 +16506,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 003b7967e94622b44a4e1173918e45e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15785,7 +16530,7 @@ Transform:
   m_LocalScale: {x: 3.8432014, y: 3.8432014, z: 3.8432012}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -48.119003}
 --- !u!1001 &2093224096
 PrefabInstance:
@@ -15798,6 +16543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -15873,9 +16623,14 @@ GameObject:
   - component: {fileID: 2104266377}
   - component: {fileID: 2104266376}
   - component: {fileID: 2104266375}
+  - component: {fileID: 2104266380}
+  - component: {fileID: 2104266379}
+  - component: {fileID: 2104266378}
+  - component: {fileID: 2104266381}
+  - component: {fileID: 2104266382}
   m_Layer: 1
-  m_Name: bandaid1
-  m_TagString: Untagged
+  m_Name: FirstBandaid
+  m_TagString: bridge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15895,7 +16650,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -15939,7 +16694,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: cf7d719fdc558554582b95ed8101fe5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15963,8 +16718,111 @@ Transform:
   m_LocalScale: {x: 0.41511872, y: 0.41511872, z: 0.4151187}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -49.140003}
+--- !u!114 &2104266378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104266374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 1310907707}
+--- !u!114 &2104266379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104266374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229267cdc04aa64459e02e357637c79f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  repathRate: 0.5
+  canSearch: 1
+  canMove: 0
+  speed: 3
+  orientation: 0
+  enableRotation: 0
+  rotationSpeed: 10
+  interpolatePathSwitches: 1
+  switchPathInterpolationSpeed: 5
+  previousPosition1: {x: 0, y: 0, z: 0}
+  previousPosition2: {x: 0, y: 0, z: 0}
+  simulatedPosition: {x: 0, y: 0, z: 0}
+  simulatedRotation: {x: 0, y: 0, z: 0, w: 0}
+  targetCompatibility: {fileID: 0}
+  rb: {fileID: 0}
+  ds: {fileID: 0}
+--- !u!114 &2104266380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104266374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &2104266381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104266374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6251d74d041c50041ad49ff1e72d0046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrabbed: 0
+  SuccessEventScript: {fileID: 0}
+  FailureEventScript: {fileID: 0}
+  chesterRequirement: 1
+--- !u!58 &2104266382
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104266374}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0000076293945}
+  serializedVersion: 2
+  m_Radius: 4.63
 --- !u!1 &2110331732
 GameObject:
   m_ObjectHideFlags: 0
@@ -15994,7 +16852,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1995271251}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -19.92}
 --- !u!212 &2110331734
 SpriteRenderer:
@@ -16034,7 +16892,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 01435dbb2a64f07408eff2ea8f35ef07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16057,6 +16915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}
@@ -16343,6 +17206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chester
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508178789515486202, guid: f1c426ef8e98d764b9cf991829b3b8a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8508178789515486203, guid: f1c426ef8e98d764b9cf991829b3b8a0,
         type: 3}

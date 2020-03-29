@@ -8,6 +8,7 @@ TagManager:
   - chester
   - grabbable
   - heartPiece
+  - bridge
   layers:
   - Default
   - TransparentFX

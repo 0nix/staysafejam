@@ -9,7 +9,7 @@ using Pathfinding;
 public class InputManager : MonoBehaviour
 {
     TestControls _controls = null;
-    public ChesterAILerp[] chester = null;
+    public List<ChesterAILerp> chester = null;
     public string[] GrabbingTags = null;
     private List<GameObject> positionPool = new List<GameObject>();
     //public ChesterAIPath[] chesterpath = null;
@@ -48,7 +48,6 @@ public class InputManager : MonoBehaviour
             if (hit && testForGrabbableTags(hit.transform.gameObject))
             {
                 hit.transform.gameObject.GetComponent<GrabbableController>().AttemptGrabToggle(projected);
-                Debug.Log("asdasdasd");
                 break;
             }
         }
@@ -75,7 +74,7 @@ public class InputManager : MonoBehaviour
         {
             projected.transform.position = new Vector3(ray.x, ray.y);
 
-            for (var i = 0; i < chester.Length; i++)
+            for (var i = 0; i < chester.Count; i++)
             {
                 if (chester[i] != null)
                 {
