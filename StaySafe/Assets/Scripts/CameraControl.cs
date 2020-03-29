@@ -29,6 +29,10 @@ public class CameraControl : MonoBehaviour
         targetSize = c.orthographicSize;
     }
 
+    public void TestSetSize()
+    {
+        SetSize(15f);
+    }
     public void SetSize(float f)
     {
         isCameraSizeUpdate = true;
