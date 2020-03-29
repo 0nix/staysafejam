@@ -41,27 +41,28 @@ public class InputManager : MonoBehaviour
 
     private void HandleTap(InputAction.CallbackContext ctx)
     {
-        if (ctx.interaction is SlowTapInteraction)
+        Vector2 v = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(v, Vector2.zero);
+        foreach(RaycastHit2D hit in hits)
         {
-            Debug.Log("Long Tap");
-        }
-        else
-        {
-            Vector2 v = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(v, Vector2.zero);
             if (hit && testForGrabbableTags(hit.transform.gameObject))
             {
                 hit.transform.gameObject.GetComponent<GrabbableController>().AttemptGrabToggle(projected);
-            }       
-            MoveProjectedCursor();
+                Debug.Log("asdasdasd");
+                break;
+            }
         }
+        MoveProjectedCursor();
     }
 
     private bool testForGrabbableTags(GameObject obj)
     {
-        foreach(string g in GrabbingTags)
+        if (obj != null)
         {
-            if (obj.CompareTag(g)) return true;
+            foreach (string g in GrabbingTags)
+            {
+                if (obj.CompareTag(g)) return true;
+            }
         }
         return false;
     }
