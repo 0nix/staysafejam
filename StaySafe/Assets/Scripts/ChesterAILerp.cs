@@ -14,6 +14,11 @@ public class ChesterAILerp : AILerp
         this.canMove = true;
     }
 
+    public void DisableNavigation()
+    {
+        this.canMove = false;
+    }
+
     public void SetTarget(Transform t)
     {
         ds.target = t;

@@ -10,6 +10,7 @@ public class InputManager : MonoBehaviour
 {
     TestControls _controls = null;
     public ChesterAILerp[] chester = null;
+    public string[] GrabbingTags = null;
     private List<GameObject> positionPool = new List<GameObject>();
     //public ChesterAIPath[] chesterpath = null;
     public GameObject projected = null;
@@ -46,10 +47,23 @@ public class InputManager : MonoBehaviour
         }
         else
         {
-            Debug.DrawLine(Vector3.zero, new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
+            Vector2 v = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(v, Vector2.zero);
+            if (hit && testForGrabbableTags(hit.transform.gameObject))
+            {
+                hit.transform.gameObject.GetComponent<GrabbableController>().AttemptGrabToggle(projected);
+            }       
             MoveProjectedCursor();
-           
         }
+    }
+
+    private bool testForGrabbableTags(GameObject obj)
+    {
+        foreach(string g in GrabbingTags)
+        {
+            if (obj.CompareTag(g)) return true;
+        }
+        return false;
     }
 
     void MoveProjectedCursor()
