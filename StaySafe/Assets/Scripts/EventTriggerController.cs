@@ -8,8 +8,9 @@ public class EventTriggerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        bool objcanMove = other.gameObject.GetComponent<ChesterAILerp>().canMove;
-        if (!objcanMove) return;
+        ChesterAILerp lerper = other.gameObject.GetComponent<ChesterAILerp>();
+        if (lerper == null) return;
+        if (!lerper.canMove) return;
         if (eventScript != null)
         {
             eventScript.SomethingHappensHere();

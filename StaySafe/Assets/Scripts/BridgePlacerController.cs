@@ -7,6 +7,8 @@ public class BridgePlacerController : MonoBehaviour
     public string bridgeTag = null;
     public GameObject bridgePlaced = null;
     public GameObject bridgeBlocker = null;
+    public EventScriptInterface optionalEventScript = null;
+    public bool execSelfHide = true;
 
     // Start is called before the first frame update
     void Start()
@@ -21,16 +23,22 @@ public class BridgePlacerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
         if (other.gameObject.CompareTag(bridgeTag))
         {
             ChesterAILerp lerper = other.gameObject.GetComponent<ChesterAILerp>();
-            if (lerper != null)
+            if (lerper != null && lerper.canMove)
             {
                 lerper.DisableNavigation();
                 other.gameObject.SetActive(false);
                 //Play VFX Animation Here
-                SelfHide();
+                if(optionalEventScript != null)
+                {
+                    optionalEventScript.SomethingHappensHere();
+                }
+                if (execSelfHide)
+                {
+                    SelfHide();
+                }
             }
         }
     }

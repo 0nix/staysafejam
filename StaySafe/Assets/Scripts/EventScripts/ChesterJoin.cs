@@ -15,8 +15,10 @@ public class ChesterJoin : EventScriptInterface
             //play vfx here
             foreach (ChesterAILerp c in chestersJoining)
             {
-                ManagerRef.chester.Add(c);
-                c.EnableNavigation();
+                if (!ManagerRef.chester.Contains(c)) {
+                    ManagerRef.chester.Add(c);
+                    c.EnableNavigation();
+                }
             }
         }
 
