@@ -6,6 +6,7 @@ public class BridgePlacerController : MonoBehaviour
 {
     public string bridgeTag = null;
     public GameObject bridgePlaced = null;
+    public GameObject bridgeBlocker = null;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class BridgePlacerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-
+        Debug.Log(other.gameObject.name);
         if (other.gameObject.CompareTag(bridgeTag))
         {
             ChesterAILerp lerper = other.gameObject.GetComponent<ChesterAILerp>();
@@ -38,7 +39,7 @@ public class BridgePlacerController : MonoBehaviour
     private void SelfHide()
     {
         bridgePlaced.SetActive(true);
-        gameObject.SetActive(false);
+        bridgeBlocker.SetActive(false);
         AstarPath.active.Scan();
     }
 }
