@@ -46,7 +46,9 @@ public class InputManager : MonoBehaviour
         }
         else
         {
+            Debug.DrawLine(Vector3.zero, new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
             MoveProjectedCursor();
+           
         }
     }
 
