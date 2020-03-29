@@ -18,6 +18,7 @@ public class DissappearAndReplace : EventScriptInterface
         {
             go.SetActive(true);
         }
+        AstarPath.active.Scan();
 
     }
 }

@@ -68,7 +68,7 @@ public class GrabbableController : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision col)
+    void OnTriggerExit2D(Collider2D col)
     {
 
         if (currentCollisions.Contains(col.gameObject))
