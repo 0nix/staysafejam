@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BridgePlacerController : MonoBehaviour
 {
-    public string bridgeTag = null;
+    public GameObject matchingBridge = null;
     public GameObject bridgePlaced = null;
     public GameObject bridgeBlocker = null;
     public EventScriptInterface optionalEventScript = null;
@@ -23,7 +23,7 @@ public class BridgePlacerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag(bridgeTag))
+        if(GameObject.ReferenceEquals(matchingBridge,other.gameObject))
         {
             ChesterAILerp lerper = other.gameObject.GetComponent<ChesterAILerp>();
             if (lerper != null && lerper.canMove)

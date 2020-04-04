@@ -14,11 +14,14 @@ public class InputManager : MonoBehaviour
     private List<GameObject> positionPool = new List<GameObject>();
     //public ChesterAIPath[] chesterpath = null;
     public GameObject projected = null;
+    public GameObject normalCursor = null;
+    public CameraControl cameraCtrl = null;
 
     // Start is called before the first frame update
     private void Awake()
     {
         _controls = new TestControls();
+        Cursor.visible = false;
     }
 
     private void OnEnable()
@@ -52,6 +55,7 @@ public class InputManager : MonoBehaviour
             }
         }
         MoveProjectedCursor();
+
     }
 
     private bool testForGrabbableTags(GameObject obj)
@@ -102,7 +106,8 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 ray = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+        if (normalCursor != null) normalCursor.transform.position = new Vector3(ray.x, ray.y);
     }
 }
 
