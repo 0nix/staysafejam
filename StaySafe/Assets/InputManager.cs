@@ -14,6 +14,7 @@ public class InputManager : MonoBehaviour
     private List<GameObject> positionPool = new List<GameObject>();
     //public ChesterAIPath[] chesterpath = null;
     public GameObject projected = null;
+    public bool inGame = false;
     public GameObject normalCursor = null;
     public CameraControl cameraCtrl = null;
 
@@ -21,10 +22,10 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         _controls = new TestControls();
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
 
-    private void OnEnable()
+    public void EnableControls()
     {
         if (_controls != null)
         {
@@ -32,6 +33,11 @@ public class InputManager : MonoBehaviour
             _controls.Main.Enable();
         }
     }
+
+    /*private void OnEnable()
+    {
+
+    }*/
     private void OnDisable()
     {
 
@@ -83,6 +89,7 @@ public class InputManager : MonoBehaviour
                 if (chester[i] != null)
                 {
                     //GameObject pos = positionPool[i];
+
                     Transform pos = projected.transform.GetChild(i);
                     ChesterAILerp ca = chester[i];
                     ca.SetTarget(pos.transform);
@@ -106,6 +113,7 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!inGame) return; 
         Vector3 ray = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
         if (normalCursor != null) normalCursor.transform.position = new Vector3(ray.x, ray.y);
     }
