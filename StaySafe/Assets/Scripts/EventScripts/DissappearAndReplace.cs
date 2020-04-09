@@ -9,8 +9,15 @@ public class DissappearAndReplace : EventScriptInterface
     public SoundManager soundManager = null;
     public bool finishingSFX = false;
     public bool barrierSFX = false;
+    public CloudScriptController cloud = null;
+    public GameObject cloudPlacer = null;
     public override void SomethingHappensHere()
     {
+        if (cloud != null)
+        {
+            cloud.PlaceAndAnimate((cloudPlacer != null) ? cloudPlacer.transform : gameObject.transform);
+        }
+
         foreach (GameObject go in hideObjects)
         {
             if (go.GetComponent<GrabbableController>() != null)

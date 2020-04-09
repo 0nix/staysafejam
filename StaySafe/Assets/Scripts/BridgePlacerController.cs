@@ -10,6 +10,8 @@ public class BridgePlacerController : MonoBehaviour
     public EventScriptInterface optionalEventScript = null;
     public bool execSelfHide = true;
     public SoundManager manager = null;
+    public CloudScriptController cloud = null;
+    public GameObject cloudPlacer = null;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,10 @@ public class BridgePlacerController : MonoBehaviour
             {
                 lerper.DisableNavigation();
                 other.gameObject.GetComponent<GrabbableController>().OnRelease();
+                if(cloud != null)
+                {
+                    cloud.PlaceAndAnimate((cloudPlacer != null) ? cloudPlacer.transform : gameObject.transform);
+                }
                 other.gameObject.SetActive(false);
                 //Play VFX Animation Here
                 if(optionalEventScript != null)
