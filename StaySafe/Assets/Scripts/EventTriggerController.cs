@@ -11,7 +11,6 @@ public class EventTriggerController : MonoBehaviour
         ChesterAILerp lerper = other.gameObject.GetComponent<ChesterAILerp>();
         if (lerper == null) return;
         if (!lerper.canMove) return;
-        Debug.Log("entered");
         if (eventScript != null)
         {
             eventScript.SomethingHappensHere();

@@ -9,6 +9,7 @@ public class GrabbableController : MonoBehaviour
     public EventScriptInterface SuccessEventScript = null;
     public EventScriptInterface FailureEventScript = null;
     public int chesterRequirement = 0;
+    public SoundManager sound = null;
     private ChesterAILerp ChesterLerp;
     // Start is called before the first frame update
     void Start()
@@ -16,20 +17,26 @@ public class GrabbableController : MonoBehaviour
         ChesterLerp = GetComponentInParent<ChesterAILerp>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void PlayHup()
     {
-
+        if(sound != null)
+        {
+            sound.PlaySFX(SoundManager.SoundSFX.Hup);
+        }
     }
 
     public virtual void OnGrab()
     {
-
+        InvokeRepeating("PlayHup", 0.3f, 0.8f);
     }
 
-    public virtual void OnRelease()
+    public virtual void OnRelease(bool playDrop = false)
     {
-
+        CancelInvoke();
+        if (sound != null && playDrop)
+        {
+            sound.PlaySFX(SoundManager.SoundSFX.Drop);
+        }
     }
     public void AttemptGrabToggle(GameObject projectedCursor)
     {
@@ -42,11 +49,13 @@ public class GrabbableController : MonoBehaviour
                 OnGrab();
                 if(SuccessEventScript != null)
                 {
-                    SuccessEventScript.SomethingHappensHere();
+                    SuccessEventScript.SomethingHappensHere();                
                 }
+                
             }
             else
             {
+                isGrabbed = false;
                 if (FailureEventScript != null)
                 {
                     FailureEventScript.SomethingHappensHere();
@@ -56,7 +65,7 @@ public class GrabbableController : MonoBehaviour
         {
             isGrabbed = false;
             ChesterLerp.DisableNavigation();
-            OnRelease();
+            OnRelease(true);
         }
     }
 

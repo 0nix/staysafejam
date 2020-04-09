@@ -9,6 +9,7 @@ public class StartGameScript : MonoBehaviour
     public Animation CreditsAnimation = null;
     public Animation ButtonAnimation = null;
     public Animation PanelAnimation = null;
+    public GameObject StartCanvasRef = null;
     // Start is called before the first frame update
     public void StartGame()
     {    
@@ -25,6 +26,7 @@ public class StartGameScript : MonoBehaviour
         manager.EnableControls();
         Cursor.visible = false;
         manager.inGame = true;
+        StartCanvasRef.SetActive(false);
 
     }
 }

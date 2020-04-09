@@ -5,14 +5,17 @@ using UnityEngine;
 public class StandardGrabFailure : EventScriptInterface
 {
     public Animation playNotification = null;
-
+    public SoundManager manager;
     public override void SomethingHappensHere()
     {
-        Debug.Log("Failed to grab");
         if(playNotification != null)
         {
             playNotification.Rewind();
             playNotification.Play();
+        }
+        if (manager != null)
+        {
+            manager.PlaySFX(SoundManager.SoundSFX.TooHeavy);
         }
 
     }

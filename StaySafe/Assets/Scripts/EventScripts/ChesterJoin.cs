@@ -6,6 +6,8 @@ public class ChesterJoin : EventScriptInterface
 {
     public ChesterAILerp[] chestersJoining = null;
     public InputManager ManagerRef = null;
+    public SoundManager SoundManager = null;
+
 
     public override void SomethingHappensHere()
     {
@@ -18,9 +20,14 @@ public class ChesterJoin : EventScriptInterface
                 if (!ManagerRef.chester.Contains(c)) {
                     ManagerRef.chester.Add(c);
                     c.EnableNavigation();
+                    if (SoundManager != null)
+                    {
+                        SoundManager.PlaySFX(SoundManager.SoundSFX.Activated);
+                    }
                 }
             }
         }
+        
 
     }
 }

@@ -9,6 +9,7 @@ public class BridgePlacerController : MonoBehaviour
     public GameObject bridgeBlocker = null;
     public EventScriptInterface optionalEventScript = null;
     public bool execSelfHide = true;
+    public SoundManager manager = null;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class BridgePlacerController : MonoBehaviour
             if (lerper != null && lerper.canMove)
             {
                 lerper.DisableNavigation();
+                other.gameObject.GetComponent<GrabbableController>().OnRelease();
                 other.gameObject.SetActive(false);
                 //Play VFX Animation Here
                 if(optionalEventScript != null)
@@ -49,5 +51,9 @@ public class BridgePlacerController : MonoBehaviour
         bridgePlaced.SetActive(true);
         bridgeBlocker.SetActive(false);
         AstarPath.active.Scan();
+        if(manager != null)
+        {
+            manager.PlaySFX(SoundManager.SoundSFX.BandaidPlaced);
+        }
     }
 }

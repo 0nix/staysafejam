@@ -4,9 +4,29 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-	// Audio players components.
-	public AudioSource EffectsSource;
+	public enum SoundSFX
+    {
+        Activated,
+        Drop,
+        Hup,
+        Pickup,
+        TooHeavy,
+        BarrierDestroy,
+        BandaidPlaced,
+        Connect
+    };
+    
+    // Audio players components.
+	public AudioClip[] ChestersActivated;
+    public AudioClip[] chestersDrop;
+    public AudioClip[] chesterHup;
+    public AudioClip[] chesterPickup;
+    public AudioClip[] chesterTooHeavy;
+    public AudioClip[] connect;
+    public AudioClip BarrierDestroy;
+    public AudioClip BandaidPlaced;
 	public AudioSource MusicSource;
+    public AudioSource EffectsSource;
 
 	// Random pitch adjustment range.
 	public float LowPitchRange = .95f;
@@ -33,29 +53,60 @@ public class SoundManager : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 	}
 
+    public void PlaySFX(SoundSFX code)
+    {
+        switch (code)
+        {
+            case SoundSFX.Activated:
+                RandomSoundEffect(ChestersActivated);
+                break;
+            case SoundSFX.BandaidPlaced:
+                StartCoroutine(Play(BandaidPlaced));
+                break;
+            case SoundSFX.BarrierDestroy:
+                StartCoroutine(Play(BarrierDestroy));
+                break;
+            case SoundSFX.Drop:
+                RandomSoundEffect(chestersDrop);
+                break;
+            case SoundSFX.TooHeavy:
+                RandomSoundEffect(chesterTooHeavy);
+                break;
+            case SoundSFX.Hup:
+                RandomSoundEffect(chesterHup);
+                break;
+            case SoundSFX.Pickup:
+                RandomSoundEffect(chesterHup);
+                break;
+            case SoundSFX.Connect:
+                RandomSoundEffect(connect);
+                break;
+        }
+    }
+
 	// Play a single clip through the sound effects source.
-	public void Play(AudioClip clip)
+	public IEnumerator Play(AudioClip clip)
 	{
-		EffectsSource.clip = clip;
+        float randomPitch = Random.Range(LowPitchRange, HighPitchRange);
+        EffectsSource.pitch = randomPitch;
+        EffectsSource.clip = clip;
 		EffectsSource.Play();
-	}
+        yield return new WaitForSeconds(clip.length);
+    }
 
 	// Play a single clip through the music source.
 	public void PlayMusic(AudioClip clip)
 	{
 		MusicSource.clip = clip;
 		MusicSource.Play();
+
 	}
 
 	// Play a random clip from an array, and randomize the pitch slightly.
 	public void RandomSoundEffect(params AudioClip[] clips)
 	{
 		int randomIndex = Random.Range(0, clips.Length);
-		float randomPitch = Random.Range(LowPitchRange, HighPitchRange);
-
-		EffectsSource.pitch = randomPitch;
-		EffectsSource.clip = clips[randomIndex];
-		EffectsSource.Play();
+        StartCoroutine(Play(clips[randomIndex]));
 	}
 
 	//Play 

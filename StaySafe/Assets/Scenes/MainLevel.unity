@@ -588,6 +588,7 @@ MonoBehaviour:
   CreditsAnimation: {fileID: 175230303}
   ButtonAnimation: {fileID: 18749353}
   PanelAnimation: {fileID: 1368847120}
+  StartCanvasRef: {fileID: 1368847116}
 --- !u!111 &18749353
 Animation:
   m_ObjectHideFlags: 0
@@ -781,6 +782,7 @@ MonoBehaviour:
   - {fileID: 177099892}
   - {fileID: 1593188890}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &41225546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,6 +1205,8 @@ GameObject:
   - component: {fileID: 60178512}
   - component: {fileID: 60178511}
   - component: {fileID: 60178518}
+  - component: {fileID: 60178519}
+  - component: {fileID: 60178520}
   m_Layer: 0
   m_Name: 8Asset 36
   m_TagString: heartPiece
@@ -1337,9 +1341,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 60178520}
+  FailureEventScript: {fileID: 60178519}
   chesterRequirement: 11
+  sound: {fileID: 1010013268}
 --- !u!114 &60178515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1433,6 +1438,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &60178519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60178508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &60178520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60178508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &64185419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -1479,6 +1511,8 @@ GameObject:
   - component: {fileID: 68681486}
   - component: {fileID: 68681491}
   - component: {fileID: 68681492}
+  - component: {fileID: 68681493}
+  - component: {fileID: 68681494}
   m_Layer: 0
   m_Name: 5Asset 29
   m_TagString: heartPiece
@@ -1576,9 +1610,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 68681494}
+  FailureEventScript: {fileID: 68681493}
   chesterRequirement: 7
+  sound: {fileID: 1010013268}
 --- !u!50 &68681487
 Rigidbody2D:
   serializedVersion: 4
@@ -1709,6 +1744,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &68681493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68681482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &68681494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68681482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &73536489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -2043,6 +2105,8 @@ GameObject:
   - component: {fileID: 105328764}
   - component: {fileID: 105328769}
   - component: {fileID: 105328770}
+  - component: {fileID: 105328771}
+  - component: {fileID: 105328772}
   m_Layer: 0
   m_Name: 4Asset 28
   m_TagString: heartPiece
@@ -2140,9 +2204,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 105328772}
+  FailureEventScript: {fileID: 105328771}
   chesterRequirement: 6
+  sound: {fileID: 1010013268}
 --- !u!50 &105328765
 Rigidbody2D:
   serializedVersion: 4
@@ -2273,6 +2338,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &105328771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105328760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &105328772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105328760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &105548292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,6 +2431,9 @@ MonoBehaviour:
   - {fileID: 105328760}
   showObjects:
   - {fileID: 1854430671}
+  soundManager: {fileID: 1010013268}
+  finishingSFX: 1
+  barrierSFX: 1
 --- !u!114 &105548295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3258,6 +3353,7 @@ MonoBehaviour:
   - {fileID: 2208451}
   - {fileID: 828078327}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &163400833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3514,7 +3610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8000001, g: 0.8000001, b: 0.8000001, a: 1}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3532,7 +3628,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "a game by \nStevenson Strepper\nKaren Morisson\nAndres Chamat\nand Asobu"
+  m_Text: 'a game by
+
+    Stevenson Strepper
+
+    Karen Morisson
+
+    Andres Chamat
+
+    and
+    Asobu'
 --- !u!222 &175230302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3806,6 +3911,7 @@ GameObject:
   - component: {fileID: 191931228}
   - component: {fileID: 191931227}
   - component: {fileID: 191931226}
+  - component: {fileID: 191931230}
   m_Layer: 8
   m_Name: Sad barrier 1
   m_TagString: Untagged
@@ -4444,6 +4550,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.331}
+--- !u!111 &191931230
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191931225}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &194467637 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -4597,6 +4719,100 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!1 &210757795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210757796}
+  - component: {fileID: 210757799}
+  - component: {fileID: 210757798}
+  - component: {fileID: 210757797}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &210757796
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210757795}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323543086}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000011444, y: -191}
+  m_SizeDelta: {x: 1073.5, y: 181.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &210757797
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210757795}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: f8aa20f98aa186e4cb5b0cac6a22a01e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: f8aa20f98aa186e4cb5b0cac6a22a01e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &210757798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210757795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8000001, g: 0.8000001, b: 0.8000001, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2347b50b2024ff349b9603b63d86a640, type: 3}
+    m_FontSize: 102
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 102
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: We're in this together.
+--- !u!222 &210757799
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210757795}
+  m_CullTransparentMesh: 0
 --- !u!1001 &212503136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5507,6 +5723,7 @@ GameObject:
   - component: {fileID: 308190786}
   - component: {fileID: 308190787}
   - component: {fileID: 308190785}
+  - component: {fileID: 308190788}
   m_Layer: 1
   m_Name: Bandaid2
   m_TagString: bridge
@@ -5592,6 +5809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chesterToRecruit: {fileID: 1493447195}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &308190781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5605,9 +5823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 308190788}
   FailureEventScript: {fileID: 308190780}
   chesterRequirement: 2
+  sound: {fileID: 1010013268}
 --- !u!114 &308190782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5738,6 +5957,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &308190788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308190777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &309516304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5790,6 +6022,7 @@ MonoBehaviour:
   - {fileID: 1973222951}
   - {fileID: 543447253}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &309516307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6055,6 +6288,105 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!1 &325115827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325115828}
+  - component: {fileID: 325115831}
+  - component: {fileID: 325115830}
+  - component: {fileID: 325115829}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &325115828
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325115827}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323543086}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000011444, y: 177}
+  m_SizeDelta: {x: 1073.5, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &325115829
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325115827}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: f8aa20f98aa186e4cb5b0cac6a22a01e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: f8aa20f98aa186e4cb5b0cac6a22a01e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &325115830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325115827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8000001, g: 0.8000001, b: 0.8000001, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2347b50b2024ff349b9603b63d86a640, type: 3}
+    m_FontSize: 71
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 75
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Sometimes it''s too hard
+
+    to pick up the pieces alone,
+
+    so you
+    need a little help.'
+--- !u!222 &325115831
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325115827}
+  m_CullTransparentMesh: 0
 --- !u!1 &332019670
 GameObject:
   m_ObjectHideFlags: 0
@@ -6309,6 +6641,8 @@ GameObject:
   - component: {fileID: 362529480}
   - component: {fileID: 362529479}
   - component: {fileID: 362529486}
+  - component: {fileID: 362529487}
+  - component: {fileID: 362529488}
   m_Layer: 0
   m_Name: 9Asset 37
   m_TagString: heartPiece
@@ -6443,9 +6777,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 362529488}
+  FailureEventScript: {fileID: 362529487}
   chesterRequirement: 19
+  sound: {fileID: 1010013268}
 --- !u!114 &362529483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6539,6 +6874,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &362529487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362529476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &362529488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362529476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &362942579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7029,6 +7391,8 @@ GameObject:
   - component: {fileID: 413773819}
   - component: {fileID: 413773818}
   - component: {fileID: 413773817}
+  - component: {fileID: 413773825}
+  - component: {fileID: 413773826}
   m_Layer: 0
   m_Name: 7Asset 35
   m_TagString: heartPiece
@@ -7088,7 +7452,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 40
   m_Sprite: {fileID: 21300000, guid: c263b52d72e241444bc35f5f6e045655, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7185,9 +7549,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 413773826}
+  FailureEventScript: {fileID: 413773825}
   chesterRequirement: 10
+  sound: {fileID: 1010013268}
 --- !u!114 &413773822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7259,6 +7624,33 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &413773825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413773814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &413773826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413773814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &418944373
 GameObject:
   m_ObjectHideFlags: 0
@@ -7346,10 +7738,11 @@ GameObject:
   - component: {fileID: 419923667}
   - component: {fileID: 419923666}
   - component: {fileID: 419923665}
-  - component: {fileID: 419923664}
   - component: {fileID: 419923671}
   - component: {fileID: 419923672}
   - component: {fileID: 419923669}
+  - component: {fileID: 419923664}
+  - component: {fileID: 419923673}
   m_Layer: 0
   m_Name: 2AssetPlaced
   m_TagString: heartPiece
@@ -7385,7 +7778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playNotification: {fileID: 0}
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &419923665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7399,9 +7793,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 419923673}
   FailureEventScript: {fileID: 419923664}
   chesterRequirement: 5
+  sound: {fileID: 1010013268}
 --- !u!114 &419923666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7567,6 +7962,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &419923673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419923662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &427406131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -7714,6 +8122,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 1032978334}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1 &434212647 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -8539,6 +8948,7 @@ MonoBehaviour:
   - {fileID: 1090509820}
   - {fileID: 411018010}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &499608376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8951,6 +9361,7 @@ GameObject:
   - component: {fileID: 535871135}
   - component: {fileID: 535871134}
   - component: {fileID: 535871133}
+  - component: {fileID: 535871136}
   m_Layer: 8
   m_Name: Sad Barrier 2
   m_TagString: Untagged
@@ -9563,7 +9974,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 28
   m_Sprite: {fileID: 21300000, guid: aad996c2bba921d4cbe693c83f42e86c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9589,6 +10000,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &535871136
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535871132}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &543447253 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8508178789515486176, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -9963,6 +10390,9 @@ MonoBehaviour:
   showObjects:
   - {fileID: 276428345}
   - {fileID: 1016532524}
+  soundManager: {fileID: 1010013268}
+  finishingSFX: 1
+  barrierSFX: 0
 --- !u!114 &587919768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9980,6 +10410,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 0}
   optionalEventScript: {fileID: 587919767}
   execSelfHide: 0
+  manager: {fileID: 0}
 --- !u!58 &587919769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11274,6 +11705,7 @@ MonoBehaviour:
   - {fileID: 1463079668}
   - {fileID: 1657527686}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &712615279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12011,6 +12443,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 468918540}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!114 &797014636 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8508178789515486176, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -12752,6 +13185,8 @@ GameObject:
   - component: {fileID: 839862357}
   - component: {fileID: 839862358}
   - component: {fileID: 839862359}
+  - component: {fileID: 839862360}
+  - component: {fileID: 839862361}
   m_Layer: 0
   m_Name: 1-2-3-4Asset 33
   m_TagString: heartPiece
@@ -12944,9 +13379,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 839862361}
+  FailureEventScript: {fileID: 839862360}
   chesterRequirement: 20
+  sound: {fileID: 1010013268}
 --- !u!114 &839862358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12982,6 +13418,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &839862360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839862349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &839862361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839862349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &841901113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13629,6 +14092,7 @@ MonoBehaviour:
   - {fileID: 1478123298}
   - {fileID: 813778347}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &898132982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14228,6 +14692,9 @@ MonoBehaviour:
   - {fileID: 1691484050}
   showObjects:
   - {fileID: 839862349}
+  soundManager: {fileID: 1010013268}
+  finishingSFX: 1
+  barrierSFX: 0
 --- !u!114 &972273921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14245,6 +14712,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 0}
   optionalEventScript: {fileID: 972273920}
   execSelfHide: 0
+  manager: {fileID: 0}
 --- !u!1001 &973589621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14487,6 +14955,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 1096128409}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1 &1010013265
 GameObject:
   m_ObjectHideFlags: 0
@@ -14498,6 +14967,7 @@ GameObject:
   - component: {fileID: 1010013266}
   - component: {fileID: 1010013268}
   - component: {fileID: 1010013267}
+  - component: {fileID: 1010013269}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -14513,11 +14983,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010013265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.624884, y: 29.248507, z: -11.514303}
+  m_LocalPosition: {x: 0, y: 0, z: -11.514303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1010013267
 AudioSource:
@@ -14531,7 +15001,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ead1eda3c00ae3841b2cb3cac882cb2c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.744
   m_Pitch: 1
   Loop: 1
   Mute: 1
@@ -14627,10 +15097,136 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045f083ad365fbf49bbf3667ac259e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectsSource: {fileID: 0}
+  ChestersActivated:
+  - {fileID: 8300000, guid: 9ed9648034f5e744f849cb49dd91f44b, type: 3}
+  - {fileID: 8300000, guid: 7d29bf000bc54cb4099b544f1503eba0, type: 3}
+  - {fileID: 8300000, guid: 9a3fc2e6dc845aa4ba1bcc82be0601e9, type: 3}
+  - {fileID: 8300000, guid: 60c734ab68478af4b96b42d5a0c42821, type: 3}
+  chestersDrop:
+  - {fileID: 8300000, guid: 933d6463288004b49abd67a27227bfaf, type: 3}
+  - {fileID: 8300000, guid: d8f129ba01917dc458bf89c8bb780910, type: 3}
+  - {fileID: 8300000, guid: 4c2a65d72aa1f234387296cf3bf992b2, type: 3}
+  - {fileID: 8300000, guid: 70c6ab083a94a664a9c407f4429312f7, type: 3}
+  chesterHup:
+  - {fileID: 8300000, guid: 3ea101123b68a204c824b95c67f752fe, type: 3}
+  - {fileID: 8300000, guid: e51195999abc56f459a1354768216571, type: 3}
+  - {fileID: 8300000, guid: 4c6dec4866de98a42925c59c65bad394, type: 3}
+  - {fileID: 8300000, guid: 552dc9d5e95515440a014a0cf9a61435, type: 3}
+  chesterPickup:
+  - {fileID: 8300000, guid: 00293095f77853848a6680c4ef2b275c, type: 3}
+  - {fileID: 8300000, guid: c5a35f4bcd12f3348823f78f9af75151, type: 3}
+  - {fileID: 8300000, guid: cfa6d1c68735fd84194646ed9d97c126, type: 3}
+  - {fileID: 8300000, guid: 1852ff12a02f37b4a9642134369459b2, type: 3}
+  chesterTooHeavy:
+  - {fileID: 8300000, guid: ffbca7d448e565d4ab4409b3f848e9da, type: 3}
+  - {fileID: 8300000, guid: d8b7312371cf4a7418f0f141f64ddc77, type: 3}
+  - {fileID: 8300000, guid: 5ce70ac3eb91e3246a2a12e6a5d4b69b, type: 3}
+  - {fileID: 8300000, guid: 8dfe4593297f3ee4babe2b9f656f531f, type: 3}
+  connect:
+  - {fileID: 8300000, guid: 201230f1744d64d44aa60d599d4b57a0, type: 3}
+  - {fileID: 8300000, guid: 213c6d71b99253541b7c07f1d5176a52, type: 3}
+  BarrierDestroy: {fileID: 8300000, guid: 01354dbcbfaa234499673fed86ef94d8, type: 3}
+  BandaidPlaced: {fileID: 8300000, guid: fd96385c8625ade4b9d0d0aaf07f4a2c, type: 3}
   MusicSource: {fileID: 1010013267}
+  EffectsSource: {fileID: 1010013269}
   LowPitchRange: 0.95
   HighPitchRange: 1.05
+--- !u!82 &1010013269
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010013265}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1016532524
 GameObject:
   m_ObjectHideFlags: 0
@@ -14649,6 +15245,7 @@ GameObject:
   - component: {fileID: 1016532528}
   - component: {fileID: 1016532527}
   - component: {fileID: 1016532534}
+  - component: {fileID: 1016532535}
   m_Layer: 0
   m_Name: bandaid4
   m_TagString: bridge
@@ -14733,6 +15330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &1016532528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14746,9 +15344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1016532535}
   FailureEventScript: {fileID: 1016532527}
   chesterRequirement: 4
+  sound: {fileID: 1010013268}
 --- !u!114 &1016532529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14879,6 +15478,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1016532535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016532524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &1018150218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15071,7 +15683,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1032978335}
   - component: {fileID: 1032978336}
-  - component: {fileID: 1032978338}
   m_Layer: 8
   m_Name: Bridge2 Blocker
   m_TagString: noBlockBridge
@@ -15119,23 +15730,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.190998, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1032978338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032978334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01009255ea775e45bde166d547080f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  matchingBridge: {fileID: 0}
-  bridgePlaced: {fileID: 920496778}
-  bridgeBlocker: {fileID: 0}
-  optionalEventScript: {fileID: 0}
-  execSelfHide: 1
 --- !u!1001 &1033290108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15699,6 +16293,7 @@ MonoBehaviour:
   - {fileID: 5247331}
   - {fileID: 56170658}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &1066563799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17180,6 +17775,9 @@ MonoBehaviour:
   - {fileID: 839862349}
   showObjects:
   - {fileID: 1193059470}
+  soundManager: {fileID: 1010013268}
+  finishingSFX: 1
+  barrierSFX: 1
 --- !u!1001 &1182688518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17472,6 +18070,8 @@ GameObject:
   - component: {fileID: 1193059473}
   - component: {fileID: 1193059479}
   - component: {fileID: 1193059478}
+  - component: {fileID: 1193059480}
+  - component: {fileID: 1193059481}
   m_Layer: 0
   m_Name: 1-2-3-4-5-6Asset 34
   m_TagString: heartPiece
@@ -17674,9 +18274,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1193059481}
+  FailureEventScript: {fileID: 1193059480}
   chesterRequirement: 31
+  sound: {fileID: 1010013268}
 --- !u!114 &1193059479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17690,6 +18291,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 31
+--- !u!114 &1193059480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193059470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &1193059481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193059470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &1195598666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17850,6 +18478,7 @@ MonoBehaviour:
   - {fileID: 1548646444}
   - {fileID: 1045601500}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &1196800090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18138,6 +18767,7 @@ MonoBehaviour:
   - {fileID: 285938563}
   - {fileID: 1404688029}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &1222663920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18477,6 +19107,7 @@ MonoBehaviour:
   - {fileID: 1863413579}
   - {fileID: 937731791}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &1267262497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18563,6 +19194,7 @@ GameObject:
   - component: {fileID: 1271695590}
   - component: {fileID: 1271695595}
   - component: {fileID: 1271695596}
+  - component: {fileID: 1271695597}
   m_Layer: 0
   m_Name: 1Asset
   m_TagString: heartPiece
@@ -18683,7 +19315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playNotification: {fileID: 0}
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &1271695591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18697,9 +19330,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1271695597}
   FailureEventScript: {fileID: 1271695590}
   chesterRequirement: 3
+  sound: {fileID: 1010013268}
 --- !u!114 &1271695592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18806,6 +19440,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1271695597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271695585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1272042045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -18880,6 +19527,7 @@ GameObject:
   - component: {fileID: 1276496463}
   - component: {fileID: 1276496458}
   - component: {fileID: 1276496464}
+  - component: {fileID: 1276496465}
   m_Layer: 0
   m_Name: bandaid9
   m_TagString: bridge
@@ -19090,9 +19738,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1276496465}
   FailureEventScript: {fileID: 1276496464}
   chesterRequirement: 35
+  sound: {fileID: 1010013268}
 --- !u!114 &1276496463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19128,6 +19777,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &1276496465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276496454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &1291917892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19871,6 +20534,7 @@ RectTransform:
   m_Children:
   - {fileID: 2046376001}
   - {fileID: 1368847117}
+  - {fileID: 1323543086}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19879,6 +20543,99 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1323543085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323543086}
+  - component: {fileID: 1323543089}
+  - component: {fileID: 1323543088}
+  - component: {fileID: 1323543087}
+  m_Layer: 5
+  m_Name: End Game Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1323543086
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323543085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 325115828}
+  - {fileID: 1753328146}
+  - {fileID: 210757796}
+  m_Father: {fileID: 1322656856}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1323543087
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323543085}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 29f8c3eaf165e70419a55a94d57d3b2d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 29f8c3eaf165e70419a55a94d57d3b2d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1323543088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323543085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1323543089
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323543085}
+  m_CullTransparentMesh: 0
 --- !u!114 &1324375858 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8508178789515486176, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -20056,6 +20813,7 @@ MonoBehaviour:
   - {fileID: 353764147}
   - {fileID: 503882634}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &1332792976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20330,6 +21088,7 @@ GameObject:
   - component: {fileID: 1347981508}
   - component: {fileID: 1347981507}
   - component: {fileID: 1347981506}
+  - component: {fileID: 1347981509}
   m_Layer: 8
   m_Name: Sad Barrier 2 (1)
   m_TagString: Untagged
@@ -20942,7 +21701,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 37
   m_Sprite: {fileID: 21300000, guid: aad996c2bba921d4cbe693c83f42e86c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20968,6 +21727,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1347981509
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347981505}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &1354721967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22028,6 +22803,9 @@ MonoBehaviour:
   - {fileID: 1564264070}
   showObjects:
   - {fileID: 1691484050}
+  soundManager: {fileID: 1010013268}
+  finishingSFX: 1
+  barrierSFX: 1
 --- !u!114 &1415181955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22172,6 +22950,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 1448651988}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1 &1428628184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -22587,12 +23366,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448469060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -37.158733}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1448469062
 MonoBehaviour:
@@ -22780,6 +23559,7 @@ GameObject:
   - component: {fileID: 1456465633}
   - component: {fileID: 1456465627}
   - component: {fileID: 1456465634}
+  - component: {fileID: 1456465635}
   m_Layer: 0
   m_Name: bandaid8 (1)
   m_TagString: bridge
@@ -22958,9 +23738,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 1276496464}
+  SuccessEventScript: {fileID: 1456465635}
+  FailureEventScript: {fileID: 1456465634}
   chesterRequirement: 20
+  sound: {fileID: 1010013268}
 --- !u!114 &1456465632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23010,6 +23791,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &1456465635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456465624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1458588747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -24400,6 +25195,7 @@ GameObject:
   - component: {fileID: 1564264073}
   - component: {fileID: 1564264080}
   - component: {fileID: 1564264081}
+  - component: {fileID: 1564264082}
   m_Layer: 0
   m_Name: 3Asset 25
   m_TagString: heartPiece
@@ -24577,7 +25373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playNotification: {fileID: 0}
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &1564264078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24591,9 +25388,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1564264082}
   FailureEventScript: {fileID: 1564264077}
   chesterRequirement: 6
+  sound: {fileID: 1010013268}
 --- !u!114 &1564264079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24643,6 +25441,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1564264082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564264070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1565042204
 GameObject:
   m_ObjectHideFlags: 0
@@ -24734,6 +25545,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 1925402758}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1001 &1581680317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25374,6 +26186,8 @@ GameObject:
   - component: {fileID: 1622647714}
   - component: {fileID: 1622647713}
   - component: {fileID: 1622647720}
+  - component: {fileID: 1622647721}
+  - component: {fileID: 1622647722}
   m_Layer: 0
   m_Name: 10Asset 38
   m_TagString: heartPiece
@@ -25508,9 +26322,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1622647722}
+  FailureEventScript: {fileID: 1622647721}
   chesterRequirement: 11
+  sound: {fileID: 1010013268}
 --- !u!114 &1622647717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25604,6 +26419,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1622647721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622647710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &1622647722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622647710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1623115847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -25934,6 +26776,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 2127697833}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1 &1675605606
 GameObject:
   m_ObjectHideFlags: 0
@@ -25952,6 +26795,7 @@ GameObject:
   - component: {fileID: 1675605611}
   - component: {fileID: 1675605615}
   - component: {fileID: 1675605616}
+  - component: {fileID: 1675605617}
   m_Layer: 0
   m_Name: bandaid7 (2)
   m_TagString: bridge
@@ -26073,9 +26917,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1675605617}
   FailureEventScript: {fileID: 1675605616}
   chesterRequirement: 3
+  sound: {fileID: 1010013268}
 --- !u!114 &1675605612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26182,6 +27027,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &1675605617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675605606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1688336069
 GameObject:
   m_ObjectHideFlags: 0
@@ -26278,9 +27137,10 @@ GameObject:
   - component: {fileID: 1691484056}
   - component: {fileID: 1691484055}
   - component: {fileID: 1691484054}
-  - component: {fileID: 1691484053}
   - component: {fileID: 1691484052}
   - component: {fileID: 1691484060}
+  - component: {fileID: 1691484053}
+  - component: {fileID: 1691484061}
   m_Layer: 0
   m_Name: 3plus4plus6
   m_TagString: heartPiece
@@ -26330,7 +27190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playNotification: {fileID: 0}
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &1691484054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26344,9 +27205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1691484061}
   FailureEventScript: {fileID: 1691484053}
   chesterRequirement: 13
+  sound: {fileID: 1010013268}
 --- !u!114 &1691484055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26477,6 +27339,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1691484061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691484050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1708677073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -26790,6 +27665,93 @@ MonoBehaviour:
   maxY: 89.6
   isTargetUpdate: 1
   isCameraSizeUpdate: 0
+--- !u!1 &1753328145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753328146}
+  - component: {fileID: 1753328149}
+  - component: {fileID: 1753328148}
+  - component: {fileID: 1753328147}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1753328146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753328145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1323543086}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 800, y: 474}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1753328147
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753328145}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3d2f71bee12e2f24195b24fea1d3e591, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 3d2f71bee12e2f24195b24fea1d3e591, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1753328148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753328145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 2179b43e763684f4596d16d5cef232b5, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1753328149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753328145}
+  m_CullTransparentMesh: 0
 --- !u!1 &1764594751
 GameObject:
   m_ObjectHideFlags: 0
@@ -27499,6 +28461,7 @@ MonoBehaviour:
   - {fileID: 573018787}
   - {fileID: 5713277}
   ManagerRef: {fileID: 1491479734}
+  SoundManager: {fileID: 1010013268}
 --- !u!114 &1852855276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27530,6 +28493,8 @@ GameObject:
   - component: {fileID: 1854430680}
   - component: {fileID: 1854430674}
   - component: {fileID: 1854430681}
+  - component: {fileID: 1854430682}
+  - component: {fileID: 1854430683}
   m_Layer: 0
   m_Name: 4Asset 28 combo 13
   m_TagString: heartPiece
@@ -27615,9 +28580,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
-  FailureEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1854430683}
+  FailureEventScript: {fileID: 1854430682}
   chesterRequirement: 13
+  sound: {fileID: 1010013268}
 --- !u!114 &1854430675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27761,6 +28727,33 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1854430682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854430671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 293b8adc715bdfd4ca588833e146da4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
+--- !u!114 &1854430683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854430671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &1857644026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28278,6 +29271,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 873548625}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1 &1910791392
 GameObject:
   m_ObjectHideFlags: 0
@@ -28619,7 +29613,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1925402759}
   - component: {fileID: 1925402760}
-  - component: {fileID: 1925402762}
   m_Layer: 8
   m_Name: Bridge1 Blocker
   m_TagString: noBlockBridge
@@ -28667,23 +29660,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.44, y: 7.67}
   m_EdgeRadius: 0
---- !u!114 &1925402762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925402758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01009255ea775e45bde166d547080f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  matchingBridge: {fileID: 0}
-  bridgePlaced: {fileID: 882451965}
-  bridgeBlocker: {fileID: 0}
-  optionalEventScript: {fileID: 0}
-  execSelfHide: 1
 --- !u!1001 &1928814129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29287,6 +30263,7 @@ GameObject:
   - component: {fileID: 1979224423}
   - component: {fileID: 1979224425}
   - component: {fileID: 1979224418}
+  - component: {fileID: 1979224426}
   m_Layer: 0
   m_Name: ThirdBandaid
   m_TagString: bridge
@@ -29474,9 +30451,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 1979224426}
   FailureEventScript: {fileID: 1979224423}
   chesterRequirement: 4
+  sound: {fileID: 1010013268}
 --- !u!114 &1979224423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29490,6 +30468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!50 &1979224424
 Rigidbody2D:
   serializedVersion: 4
@@ -29533,6 +30512,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &1979224426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979224415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &1979246848
 GameObject:
   m_ObjectHideFlags: 0
@@ -29937,6 +30929,9 @@ MonoBehaviour:
   hideObjects:
   - {fileID: 240950640}
   showObjects: []
+  soundManager: {fileID: 0}
+  finishingSFX: 0
+  barrierSFX: 0
 --- !u!1 &2008860883
 GameObject:
   m_ObjectHideFlags: 0
@@ -29948,6 +30943,7 @@ GameObject:
   - component: {fileID: 2008860886}
   - component: {fileID: 2008860885}
   - component: {fileID: 2008860884}
+  - component: {fileID: 2008860887}
   m_Layer: 8
   m_Name: Sad Barrier 3
   m_TagString: Untagged
@@ -30560,7 +31556,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 52
   m_Sprite: {fileID: 21300000, guid: aad996c2bba921d4cbe693c83f42e86c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -30586,6 +31582,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &2008860887
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008860883}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c65b582ab645a074693a169527d0ee69, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &2022698640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31117,6 +32129,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 1642029817}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1001 &2056452324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31569,6 +32582,7 @@ GameObject:
   - component: {fileID: 2080538417}
   - component: {fileID: 2080538418}
   - component: {fileID: 2080538416}
+  - component: {fileID: 2080538419}
   m_Layer: 0
   m_Name: bandaid6 (1)
   m_TagString: bridge
@@ -31710,6 +32724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &2080538414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31723,9 +32738,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 2080538419}
   FailureEventScript: {fileID: 2080538413}
   chesterRequirement: 6
+  sound: {fileID: 1010013268}
 --- !u!114 &2080538415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31821,6 +32837,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &2080538419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080538408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &2087535628 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -31964,6 +32993,7 @@ GameObject:
   - component: {fileID: 2104266381}
   - component: {fileID: 2104266383}
   - component: {fileID: 2104266384}
+  - component: {fileID: 2104266385}
   m_Layer: 1
   m_Name: FirstBandaid
   m_TagString: bridge
@@ -32086,7 +33116,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 0
-  speed: 5
+  speed: 5.2
   orientation: 0
   enableRotation: 0
   rotationSpeed: 10
@@ -32140,9 +33170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 2104266385}
   FailureEventScript: {fileID: 2104266383}
   chesterRequirement: 1
+  sound: {fileID: 1010013268}
 --- !u!58 &2104266382
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32172,6 +33203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &2104266384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32194,6 +33226,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &2104266385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104266374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1 &2105972179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
@@ -32240,6 +33285,7 @@ GameObject:
   - component: {fileID: 2110331738}
   - component: {fileID: 2110331741}
   - component: {fileID: 2110331742}
+  - component: {fileID: 2110331743}
   m_Layer: 0
   m_Name: bandaid5
   m_TagString: bridge
@@ -32397,6 +33443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playNotification: {fileID: 732182014}
+  manager: {fileID: 1010013268}
 --- !u!114 &2110331739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32410,9 +33457,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrabbed: 0
-  SuccessEventScript: {fileID: 0}
+  SuccessEventScript: {fileID: 2110331743}
   FailureEventScript: {fileID: 2110331738}
   chesterRequirement: 6
+  sound: {fileID: 1010013268}
 --- !u!114 &2110331740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32470,6 +33518,19 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
+--- !u!114 &2110331743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110331732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915b31949c0f30c46b6789dc21b024a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 1010013268}
 --- !u!1001 &2119306322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32715,6 +33776,7 @@ MonoBehaviour:
   bridgeBlocker: {fileID: 1401281242}
   optionalEventScript: {fileID: 0}
   execSelfHide: 1
+  manager: {fileID: 1010013268}
 --- !u!1 &2135114257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508178789515486179, guid: f1c426ef8e98d764b9cf991829b3b8a0,
