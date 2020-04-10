@@ -55,7 +55,7 @@ public class CameraControl : MonoBehaviour
             c.transform.position = new Vector3(Mathf.Clamp(desiredPosition.x, minX, maxX), Mathf.Clamp(desiredPosition.y, minY, maxY), -10);
         }
 
-        if (isCameraSizeUpdate && !Mathf.Approximately(c.orthographicSize,targetSize))
+        if (isCameraSizeUpdate )//&& !Mathf.Approximately(c.orthographicSize,targetSize))
         {
             float elapsedTime = Time.time - startTimeTargetSize;
             c.orthographicSize = Mathf.Lerp(c.orthographicSize, targetSize, elapsedTime / sizechangeTime);
