@@ -22,7 +22,6 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         _controls = new TestControls();
-        //Cursor.visible = false;
     }
 
     public void EnableControls()
@@ -32,6 +31,29 @@ public class InputManager : MonoBehaviour
             _controls.Main.Tap.performed += HandleTap;
             _controls.Main.Enable();
         }
+    }
+
+    public void EndScreenControls()
+    {
+        if (_controls != null)
+        {
+            _controls.Main.Disable();
+            _controls.Main.Tap.performed -= HandleTap;
+            _controls.Main.Tap.performed += ExitGame;
+            Cursor.visible = true;
+            _controls.Main.Enable();
+        }
+    }
+
+
+    public void ExitGame(InputAction.CallbackContext ctx)
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+
     }
 
     /*private void OnEnable()
@@ -44,7 +66,6 @@ public class InputManager : MonoBehaviour
         if (_controls != null)
         {
             _controls.Main.Disable();
-            _controls.Main.Tap.performed -= HandleTap;
         }
     }
 

@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DissappearAndReplace : EventScriptInterface
+public class LastDissappearAndReplace : DissappearAndReplace
 {
-    public GameObject[] hideObjects = null;
-    public GameObject[] showObjects = null;
-    public SoundManager soundManager = null;
-    public bool finishingSFX = false;
-    public bool barrierSFX = false;
-    public CloudScriptController cloud = null;
-    public GameObject cloudPlacer = null;
+    public Animation fadeInEndScreen = null;
+    public InputManager input;
+    public GameObject endScreen = null;
+
     public override void SomethingHappensHere()
     {
         if (cloud != null)
@@ -31,10 +28,10 @@ public class DissappearAndReplace : EventScriptInterface
         {
             go.SetActive(true);
         }
-        AstarPath.active.Scan();
         if (finishingSFX && soundManager != null)
         {
-            if (barrierSFX) {
+            if (barrierSFX)
+            {
                 soundManager.PlaySFX(SoundManager.SoundSFX.BarrierDestroy);
             }
             else
@@ -42,5 +39,17 @@ public class DissappearAndReplace : EventScriptInterface
                 soundManager.PlaySFX(SoundManager.SoundSFX.Connect);
             }
         }
+        StartCoroutine(EndGame());
+    }
+
+    public IEnumerator EndGame()
+    {
+        yield return new WaitForSecondsRealtime(6f);
+        input.inGame = false;
+        endScreen.SetActive(true);
+        fadeInEndScreen.Rewind();
+        fadeInEndScreen.Play();
+        yield return new WaitForSecondsRealtime(5f);
+        input.EndScreenControls();
     }
 }
